@@ -10,7 +10,7 @@ export interface GeminiResponse {
 }
 
 class GeminiService {
-  private apiKey = 'AIzaSyAMNl2uwg9qFTAug5Tyz4RwihnwuHWUaJc';
+  private apiKey = 'your_gemini_api_key_here'; // Replace with your actual Gemini API key
   private baseUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent';
 
   async generateResponse(prompt: string): Promise<GeminiResponse> {
